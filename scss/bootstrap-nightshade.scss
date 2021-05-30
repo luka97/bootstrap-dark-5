@@ -13,15 +13,18 @@
 
 // Configuration
 @import "functions";
-@import "variables";  // defaults are here
-@import "variables-alt";  // dark color set is here
+@import "variables-mods";
+@import "variables"; // defaults are here
+@import "variables-alt"; // dark color set is here
 @import "mixins";
 @import "dark/mixins";
 @import "utilities";
 @import "dark/utilities";
-@import "dark/patch";  // missing from BS, unsupported patch/hack
+@import "dark/patch"; // missing from BS, unsupported patch/hack
 
-:root { color-scheme: light; }
+:root {
+  color-scheme: light;
+}
 
 // stylelint-disable no-invalid-position-at-import-rule
 
@@ -68,8 +71,9 @@
  */
 
 @include color-scheme-alt("html.dark") {
-
-  :root { color-scheme: dark; }
+  :root {
+    color-scheme: dark;
+  }
 
   // Layout & components
   @import "dark/root";

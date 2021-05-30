@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.bg-body{
+  transition: .5s;
+}
+
+$bright-teal: hsl(180, 100%, 40%) !default;
+$orange: hsla(27, 98%, 50%, 1) !default;
+
+$primary: $orange !default;
+$secondary: $bright-teal !default;
+
+$enable-shadows: true !default;
+
+$body-bg: #fafafa !default;
+
+$font-family-sans-serif: "Roboto", arial, sans-serif, "Apple Color Emoji" !default;
+$font-family-monospace: "Roboto Slab", monospace !default;
