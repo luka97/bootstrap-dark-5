@@ -1,6 +1,5 @@
 // xxxstylelint-disable declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix
 
-
 // Reboot
 //
 // Normalization of HTML elements, manually forked from Normalize.css ... (see core `_reboot.scss` file)
@@ -9,17 +8,21 @@
 
 // Body
 
-body {
-  color: $body-color-alt;
-  background-color: $body-bg-alt; // 2
-}
+$enable-colors-hack: false !default;
 
+@if $enable-colors-hack {
+  // @debug ">>> $enable-colors-hack = true";
+  body {
+    color: var(--#{$variable-prefix}body-color-alt);
+    background-color: var(--#{$variable-prefix}body-bg-alt); // 2
+  }
+}
 
 // Content grouping
 
 hr {
   color: $hr-color-alt; // 1
-  // background-color: currentColor;
+  background-color: $hr-bg-color-alt;
   opacity: $hr-opacity-alt;
 }
 

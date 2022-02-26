@@ -40,6 +40,7 @@ $danger:                                      $danger-alt;
 $light:                                       $light-alt;
 $dark:                                        $dark-alt;
 $theme-colors:                                $theme-colors-alt;
+$theme-colors-rgb:                            $theme-colors-rgb-alt;
 $min-contrast-ratio:                          $min-contrast-ratio-alt;
 $color-contrast-dark:                         $color-contrast-dark-alt;
 $color-contrast-light:                        $color-contrast-light-alt;
@@ -50,6 +51,13 @@ $gradient:                                    $gradient-alt;
 // --- Body ---
 $body-bg:                                     $body-bg-alt;
 $body-color:                                  $body-color-alt;
+
+// --- Utilities maps ---
+$utilities-colors:                            $utilities-colors-alt;
+$utilities-text:                              $utilities-text-alt;
+$utilities-text-colors:                       $utilities-text-colors-alt;
+$utilities-bg:                                $utilities-bg-alt;
+$utilities-bg-colors:                         $utilities-bg-colors-alt;
 
 // --- Links ---
 $link-color:                                  $link-color-alt;
@@ -70,6 +78,7 @@ $headings-color:                              $headings-color-alt;
 $text-muted:                                  $text-muted-alt;
 $blockquote-footer-color:                     $blockquote-footer-color-alt;
 $hr-color:                                    $hr-color-alt;
+$hr-bg-color:                                 $hr-bg-color-alt;
 $hr-opacity:                                  $hr-opacity-alt;
 $mark-bg:                                     $mark-bg-alt;
 
@@ -265,11 +274,16 @@ $pagination-disabled-color:                   $pagination-disabled-color-alt;
 $pagination-disabled-bg:                      $pagination-disabled-bg-alt;
 $pagination-disabled-border-color:            $pagination-disabled-border-color-alt;
 
+// --- Placeholders ---
+$placeholder-opacity-max:                     $placeholder-opacity-max-alt;
+$placeholder-opacity-min:                     $placeholder-opacity-min-alt;
+
 // --- Cards ---
 $card-border-color:                           $card-border-color-alt;
 $card-cap-bg:                                 $card-cap-bg-alt;
 $card-cap-color:                              $card-cap-color-alt;
 $card-color:                                  $card-color-alt;
+$card-box-shadow:                             $card-box-shadow-alt;
 $card-bg:                                     $card-bg-alt;
 
 // --- Accordion ---
@@ -397,6 +411,8 @@ $offcanvas-border-color:                      $offcanvas-border-color-alt;
 $offcanvas-bg-color:                          $offcanvas-bg-color-alt;
 $offcanvas-color:                             $offcanvas-color-alt;
 $offcanvas-box-shadow:                        $offcanvas-box-shadow-alt;
+$offcanvas-backdrop-bg:                       $offcanvas-backdrop-bg-alt;
+$offcanvas-backdrop-opacity:                  $offcanvas-backdrop-opacity-alt;
 
 // --- Code ---
 $code-color:                                  $code-color-alt;
@@ -407,4 +423,4 @@ $pre-color:                                   $pre-color-alt;
 // !! Don't remove the next 2 lines
 // fusv-enable
 // stylelint-enable
-// Generated: Sat May 29 2021 10:23:39 GMT+1000 (Australian Eastern Standard Time)
+// Generated: Wed Oct 06 2021 11:55:02 GMT+1100 (Australian Eastern Daylight Time)

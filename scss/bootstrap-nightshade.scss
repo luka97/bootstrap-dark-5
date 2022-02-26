@@ -1,36 +1,36 @@
 /*!
- * Bootstrap v5.0.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
+ * Bootstrap v5.x.x (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  *
  * Bootstrap-Nightshade (https://vinorodrigues.github.io/bootstrap-dark-5/)
- * Copyright 2020-2021 Vino Rodrigues
+ * Copyright 2020-2022 Vino Rodrigues
  * This version is a dual color theme, with the default light mode and the dark
  * elements optioned in by a `.dark` class in `<html>` tag.
  * Why `<html>`? See https://css-tricks.com/html-vs-body-in-css/#quirky-background-color
  */
 
+// stylelint-disable-next-line scss/dollar-variable-default
+$enable-colors-hack: true;
+
 // Configuration
 @import "functions";
-@import "variables-mods";
+@import "dark/functions";
 @import "variables"; // defaults are here
 @import "variables-alt"; // dark color set is here
 @import "mixins";
-@import "dark/mixins";
+@import "dark/mixins-2"; // !!!! fix for issue #32
 @import "utilities";
 @import "dark/utilities";
 @import "dark/patch"; // missing from BS, unsupported patch/hack
 
-:root {
-  color-scheme: light;
-}
-
-// stylelint-disable no-invalid-position-at-import-rule
+// :root { color-scheme: light; }  // !!!! fix for issue #33, do not set
 
 // Layout & components
 @import "root";
 @import "reboot";
+@import "dark/root-alts"; // !!!! fix for issue #35
 @import "type";
 @import "images";
 @import "containers";
@@ -59,6 +59,7 @@
 @import "carousel";
 @import "spinners";
 @import "offcanvas";
+@import "placeholders";
 
 // Helpers
 @import "helpers";
@@ -71,18 +72,16 @@
  */
 
 @include color-scheme-alt("html.dark") {
-  :root {
-    color-scheme: dark;
-  }
+  // :root { color-scheme: dark; }  // !!!! fix for issue #33, do not set
 
   // Layout & components
-  @import "dark/root";
+  // @import "dark/root";  // !!!! fix for issue #33, do not use `dark/root`
   @import "dark/reboot";
   @import "dark/type";
   @import "dark/images";
   @import "dark/tables";
   @import "dark/forms";
-  @import "dark/buttons";
+  @import "dark/buttons-2"; // !!!! fix for issue #32
   @import "dark/dropdown";
   @import "dark/button-group";
   @import "dark/nav";
@@ -102,6 +101,7 @@
   @import "dark/popover";
   @import "dark/carousel";
   @import "dark/offcanvas";
+  @import "dark/placeholders";
 
   // Helpers
   @import "dark/helpers";

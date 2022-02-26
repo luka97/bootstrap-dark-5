@@ -1,10 +1,21 @@
 # The Ancillary Guide to Dark Mode and Bootstrap 5
 **A continuation of the v4 Dark Mode POC, but this time for v5**
 
-> This is a follow up to [The Definitive Guide to Dark Mode and Bootstrap 4](http://vinorodrigues.github.io/bootstrap-dark) body of work,
-> and pertains to [Bootstrap 5](https://getbootstrap.com) *([Github repo.](https://github.com/twbs/bootstrap))*.
+> This is a follow up to [The Definitive Guide to Dark Mode and Bootstrap 4](http://vinorodrigues.github.io/bootstrap-dark) body of work, and pertains to [Bootstrap 5](https://getbootstrap.com) *([Github repo.](https://github.com/twbs/bootstrap))*.
 
 > If you're after the same work for [Bootstrap 4](https://getbootstrap.com/docs/4.5/) please visit the [vinorodrigues/bootstrap-dark](https://github.com/vinorodrigues/bootstrap-dark) repo.
+
+-----------------------------------------------------------------------------
+
+> ### ![NOTE:](https://img.shields.io/badge/NOTE%3A-069)  &nbsp; A note on current state (Feb 2022):
+>
+> Development efforts back at Bootstrap 5's core repository are currently geared at converting all color to CSS Variables.  Obviously this greatly modifies the methodologies used in this POC and would in essence require a major re-write of the code.  The addition of CSS variables also brings in some additional complexity in some of the variants *(this project shows 6 methods of attaining dark mode with Bootstrap 5)* - specifically the `-nightshade` and `-backbox` variants have major issues in accomodating for CSS variables. *(Not impossible, but complex nevertheless.)*
+>
+> As such - I will not be updating this project *(thus it remains tied to the v5.1.3 release)* until such time as it becomes clear in what direction Mark Otto et.al. are gearing their project towards.  The intent is clear - with CSS variables *(for the color elements)* - theming is much simpler.  Dark Mode capability, in essence a dual theme driven by browser/OS preference, remains to be seen.
+>  
+> In the meantime, any CSS Variable conversion pulls to the core repo will be documented as a "to do" via the [issues page](https://github.com/vinorodrigues/bootstrap-dark-5/issues) of this project.
+
+-----------------------------------------------------------------------------
 
 
 ## About
@@ -53,7 +64,7 @@ The code compiles the four methods *(and variants - **six in total**)* of the or
 | | | [`darkmode.js` Reference](docs/darkmode.js.md) | [`darkmode.js` Reference](docs/darkmode.js.md) | | |
 | [See Example](https://vinorodrigues.github.io/bootstrap-dark-5/examples/cheatsheet-night.html) | | [See Example](https://vinorodrigues.github.io/bootstrap-dark-5/examples/cheatsheet-nightshade.html) | | [See Example](https://vinorodrigues.github.io/bootstrap-dark-5/examples/cheatsheet-dark.html) | |
 
-## The Proof Is in the Pudding
+## The Proof is in the Pudding
 
 Some of the test pages have been set up at [vinorodrigues.github.io/bootstrap-dark-5](https://vinorodrigues.github.io/bootstrap-dark-5/)
 
@@ -79,6 +90,16 @@ If you're a theme builder or want to use its principles in your own project you'
 npm i -g  autoprefixer  documentation browser-sync  clean-css-cli  cross-env  eslint  eslint-config-xo  eslint-plugin-import  eslint-plugin-unicorn  find-unused-sass-variables  imagemin-cli  nodemon  npm-run-all  postcss-cli  rtlcss  sass  stylelint  stylelint-config-twbs-bootstrap  svgo  terser typescript
 ```
 
+#### Note 1:
+
+This code is just a rehash of Bootstrap 5 core code to add "dark mode" functionality and is declared as a "Proof of Concept" *(PoC)* - that means it's not intended as a production source, but merely an exercise to prove that dark-mode is attainable via various methods, i.e. it is an educative piece.  It also means that it's author *(Vino Rodrigues)* is not compelled to support it.
+
+#### Note 2:
+
+This project will ***not*** compile with Node-Sass.  Refer to the original Bootstrap 5 docs, especially here (https://getbootstrap.com/docs/5.1/getting-started/build-tools/#sass), and you'll note that they have deprecated the use of Node-Sass in favour of Dart-Sass.
+
+They in turn cite this (https://sass-lang.com/blog/libsass-is-deprecated) article wherein the Sass curators state they will no longer support LibSass, that Node-Sass is dependant on.
+
 
 ### NPM
 
@@ -99,25 +120,25 @@ You can access the theme CSS file from the GitHub release:
 
 * **`bootstrap-dark`** - the @media `perfers-color-scheme` variant
   * Production / minified variant:
-    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-dark.min.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-dark.min.css)
+    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css)
   * Development / Debug variant:
-    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-dark.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-dark.css)
+    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.css)
   * Also, read the [Quick Start Guide](docs/bootstrap-dark.md).
 
 * **`bootstrap-nightshade`** - the `html.dark` css class + JS library variant
   * Production / minified variants:
-    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-nightshade.min.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-nightshade.min.css)
-    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/js/darkmode.min.js`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/js/darkmode.min.js)
+    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightshade.min.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightshade.min.css)
+    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/js/darkmode.min.js`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/js/darkmode.min.js)
   * Development / Debug variants:
-    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-nightshade.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-nightshade.css)
-    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/js/darkmode.js`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/js/darkmode.js)
+    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightshade.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightshade.css)
+    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/js/darkmode.js`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/js/darkmode.js)
   * Also, read the [Quick Start Guide](docs/bootstrap-nightshade.md) and the [`darkmode.js` Reference](docs/darkmode.js.md).
 
 * **`bootstrap-night`** - that dark theme only variant
   * Production / minified variant:
-    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-night.min.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css.bootstrap-night.min.css)
+    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.min.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.min.css)
   * Development / Debug variant:
-    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-night.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.1/dist/css/bootstrap-night.css)
+    * [`https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.css`](https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.css)
   * Also, read the [Quick Start Guide](docs/bootstrap-night.md).
 
 * Source etc. are [here](https://cdn.jsdelivr.net/gh/vinorodrigues/bootstrap-dark-5/), but I recommend using [GitHub](https://github.com/vinorodrigues/bootstrap-dark-5).
@@ -145,4 +166,4 @@ If you have [useful feedback](https://alearningaday.blog/2020/08/04/useful-feedb
 
 ---
 
-<p align="center" style="display:block;font-size:75%;text-align:center">&copy; 2021</p>
+<p align="center" style="display:block;font-size:75%;text-align:center">&copy; 2022</p>

@@ -39,6 +39,7 @@
   "dark",
 
   "theme-colors",
+  "theme-colors-rgb",
 
   "min-contrast-ratio",
   "color-contrast-dark",
@@ -52,6 +53,13 @@
 
   "body-bg",
   "body-color",
+
+  "// --- Utilities maps ---",
+  "utilities-colors",
+  "utilities-text",
+  "utilities-text-colors",
+  "utilities-bg",
+  "utilities-bg-colors",
 
   "// --- Links ---",
 
@@ -76,6 +84,7 @@
   "text-muted",
   "blockquote-footer-color",
   "hr-color",
+  "hr-bg-color",
   "hr-opacity",
   "mark-bg",
 
@@ -319,12 +328,17 @@
   "pagination-disabled-bg",
   "pagination-disabled-border-color",
 
+  "// --- Placeholders ---",
+  "placeholder-opacity-max",
+  "placeholder-opacity-min",
+
   "// --- Cards ---",
 
   "card-border-color",
   "card-cap-bg",
   "card-cap-color",
   "card-color",
+  "card-box-shadow",
   "card-bg",
 
   "// --- Accordion ---",
@@ -488,6 +502,8 @@
   "offcanvas-bg-color",
   "offcanvas-color",
   "offcanvas-box-shadow",
+  "offcanvas-backdrop-bg",
+  "offcanvas-backdrop-opacity",
 
   "// --- Code ---",
 

@@ -1,17 +1,18 @@
 /*!
- * Bootstrap v5.0.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
+ * Bootstrap v5.x.x (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  *
  * Bootstrap-Nightfall (https://vinorodrigues.github.io/bootstrap-dark-5/)
- * Copyright 2020-2021 Vino Rodrigues
+ * Copyright 2020-2022 Vino Rodrigues
  * This version is an extraction with only the dark elements, or deltas, of the
  * dark theme.  Used as a bootstrap plugin.
  */
 
 // Configuration
 @import "functions";
+@import "dark/functions";
 @import "variables";  // defaults are here
 @import "variables-alt";  // dark color set is here
 @import "mixins";
@@ -19,8 +20,6 @@
 @import "utilities";
 @import "dark/utilities";
 @import "dark/patch";  // missing from BS, unsupported patch/hack
-
-// stylelint-disable no-invalid-position-at-import-rule
 
 :root { color-scheme: dark; }
 
@@ -51,6 +50,7 @@
 @import "dark/popover";
 @import "dark/carousel";
 @import "dark/offcanvas";
+@import "dark/placeholders";
 
 // Helpers
 @import "dark/helpers";

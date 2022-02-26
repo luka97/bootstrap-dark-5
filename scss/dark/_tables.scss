@@ -3,7 +3,9 @@
 //
 
 .table {
+  --#{$variable-prefix}table-color: #{$table-color-alt};
   --#{$variable-prefix}table-bg: #{$table-bg-alt};
+  --#{$variable-prefix}table-border-color: #{$table-border-color-alt};
   --#{$variable-prefix}table-accent-bg: #{$table-accent-bg-alt};
   --#{$variable-prefix}table-striped-color: #{$table-striped-color-alt};
   --#{$variable-prefix}table-striped-bg: #{$table-striped-bg-alt};
@@ -12,8 +14,8 @@
   --#{$variable-prefix}table-hover-color: #{$table-hover-color-alt};
   --#{$variable-prefix}table-hover-bg: #{$table-hover-bg-alt};
 
-  color: $table-color-alt;
-  border-color: $table-border-color-alt;
+  color: $table-color-alt;  // color: var(--#{$variable-prefix}table-color);  // TODO: RE-REGRESS AFTER 5.3.1!!
+  border-color: $table-border-color-alt;  // border-color: var(--#{$variable-prefix}table-border-color);  // TODO: RE-REGRESS AFTER 5.3.1!!
 
   // DONT NEED TO DARK, CSS VARS TAKES CARE OF THIS.
   // Target th & td
@@ -24,9 +26,9 @@
   // }
 
   // Highlight border color between thead, tbody and tfoot.
-  // > :not(:last-child) > :last-child > * {
-  //   border-bottom-color: $table-group-separator-color-alt;
-  // }
+  > :not(:first-child) {
+    border-top: (2 * $table-border-width) solid $table-group-separator-color-alt;
+  }
 }
 
 
@@ -34,7 +36,7 @@
 
 // DONT NEED TO DARK, CSS VARS TAKES CARE OF THIS.
 // .table-striped {
-//   > tbody > tr:nth-of-type(#{$table-striped-order}) {
+//   > tbody > tr:nth-of-type(#{$table-striped-order}) > * {
 //     --#{$variable-prefix}table-accent-bg: var(--#{$variable-prefix}table-striped-bg);
 //     color: var(--#{$variable-prefix}table-striped-color);
 //   }
@@ -52,7 +54,7 @@
 
 // DONT NEED TO DARK, CSS VARS TAKES CARE OF THIS.
 // .table-hover {
-//   > tbody > tr:hover {
+//   > tbody > tr:hover > * {
 //     --#{$variable-prefix}table-accent-bg: var(--#{$variable-prefix}table-hover-bg);
 //     color: var(--#{$variable-prefix}table-hover-color);
 //   }
