@@ -57,7 +57,7 @@ $utilities-alt: map-merge(
       )
     ),
     // Text
-    // DONT NEED TO DARK, CSS VARS TAKES CARE OF THIS.
+    // DON'T NEED TO DARK, CSS VARS TAKES CARE OF THIS.
     // "gradient": (
     //   property: background-image,
     //   class: bg,
@@ -66,13 +66,13 @@ $utilities-alt: map-merge(
     "color": (
       property: color,
       class: text,
+      local-vars: (
+        "text-opacity": 1
+      ),
       values: map-merge(
-        $theme-colors-alt,
+        $utilities-text-colors-alt,
         (
-          "body": $body-color-alt,
           "muted": $text-muted-alt,
-          "white": $white-alt,
-          "black": $black-alt,
           "white-50": rgba($white-alt, .5),
           "black-50": rgba($black-alt, .5)
         )
@@ -81,11 +81,12 @@ $utilities-alt: map-merge(
     "background-color": (
       property: background-color,
       class: bg,
+      local-vars: (
+        "bg-opacity": 1
+      ),
       values: map-merge(
-        $theme-colors-alt,
+        $utilities-bg-colors-alt,
         (
-          "body": $body-bg-alt,
-          "white": $white-alt,
           "black": $black-alt
         )
       )

@@ -73,7 +73,7 @@ body {
 .color-scheme-dark .bd-aside a,
 [data-bs-color-scheme="dark"] .bd-aside a
 html.dark .bd-aside a {
-    color: rgba(255, 255, 255, .65);
+  color: rgba(255, 255, 255, .65);
 }
 
 .color-scheme-dark .bd-aside a:hover,
@@ -82,7 +82,7 @@ html.dark .bd-aside a:hover,
 html.dark .bd-aside a:focus,
 [data-bs-color-scheme="dark"] .bd-aside a:hover,
 [data-bs-color-scheme="dark"] .bd-aside a:focus {
-    color: rgba(255, 255, 255, .85);
+  color: rgba(255, 255, 255, .85);
   background-color: rgba(140, 179, 82, .1);
 }
 
@@ -202,9 +202,10 @@ html.dark .bd-aside .btn:focus,
     content: "";
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) calc(100% - 3rem), rgba(255, 255, 255, .01));
   }
+
   .color-scheme-dark .bd-cheatsheet section > h2::before,
-  html.dark .bd-cheatsheet section > h2::before,
-  [data-bs-color-scheme="dark"] .bd-cheatsheet section > h2::before {
+  [data-bs-color-scheme="dark"] .bd-cheatsheet section > h2::before,
+  html.dark .bd-cheatsheet section > h2::before {
     background-image: linear-gradient(to bottom, rgba(34, 34, 34, 1) calc(100% - 3rem), rgba(34, 34, 34, .01));
   }
 

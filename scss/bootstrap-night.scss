@@ -1,26 +1,28 @@
 /*!
- * Bootstrap v5.0.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
+ * Bootstrap v5.x.x (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  *
  * Bootstrap-Night (https://vinorodrigues.github.io/bootstrap-dark-5/)
- * Copyright 2020-2021 Vino Rodrigues
- * This version is a fullfledged dark theme
+ * Copyright 2020-2022 Vino Rodrigues
+ * This version is a fully fledged dark theme
  */
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$enable-color-func-revert: true;
 
 // Configuration
 @import "functions";
+@import "dark/functions";
 @import "variables";  // defaults are here
 @import "variables-alt";  // dark color set is here
-@import "dark/variables-map-alt-to-core";  // map the `-alt`'s back to core colors
 @import "mixins";
 @import "utilities";
+@import "dark/variables-map-alt-to-core";  // map the `-alt`'s back to core colors
 @import "dark/patch";  // missing from BS, unsupported patch/hack
 
 :root { color-scheme: dark; }  // TODO: this should be code based.
-
-// stylelint-disable no-invalid-position-at-import-rule
 
 // Layout & components
 @import "root";
@@ -53,6 +55,7 @@
 @import "carousel";
 @import "spinners";
 @import "offcanvas";
+@import "placeholders";
 
 // Helpers
 @import "helpers";

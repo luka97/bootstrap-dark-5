@@ -40,6 +40,7 @@ $danger-temp-dnu:                                      $danger;
 $light-temp-dnu:                                       $light;
 $dark-temp-dnu:                                        $dark;
 $theme-colors-temp-dnu:                                $theme-colors;
+$theme-colors-rgb-temp-dnu:                            $theme-colors-rgb;
 $min-contrast-ratio-temp-dnu:                          $min-contrast-ratio;
 $color-contrast-dark-temp-dnu:                         $color-contrast-dark;
 $color-contrast-light-temp-dnu:                        $color-contrast-light;
@@ -50,6 +51,13 @@ $gradient-temp-dnu:                                    $gradient;
 // --- Body ---
 $body-bg-temp-dnu:                                     $body-bg;
 $body-color-temp-dnu:                                  $body-color;
+
+// --- Utilities maps ---
+$utilities-colors-temp-dnu:                            $utilities-colors;
+$utilities-text-temp-dnu:                              $utilities-text;
+$utilities-text-colors-temp-dnu:                       $utilities-text-colors;
+$utilities-bg-temp-dnu:                                $utilities-bg;
+$utilities-bg-colors-temp-dnu:                         $utilities-bg-colors;
 
 // --- Links ---
 $link-color-temp-dnu:                                  $link-color;
@@ -70,13 +78,14 @@ $headings-color-temp-dnu:                              $headings-color;
 $text-muted-temp-dnu:                                  $text-muted;
 $blockquote-footer-color-temp-dnu:                     $blockquote-footer-color;
 $hr-color-temp-dnu:                                    $hr-color;
+$hr-bg-color-temp-dnu:                                 $hr-bg-color;
 $hr-opacity-temp-dnu:                                  $hr-opacity;
 $mark-bg-temp-dnu:                                     $mark-bg;
 
 // --- Tables ---
 $table-color-temp-dnu:                                 $table-color;
 $table-bg-temp-dnu:                                    $table-bg;
-$table-accent-bg-temp-dnu:                             $table-bg;  // ***** manually changed because 5.0.1 does not have $table-accent-bg *****
+$table-accent-bg-temp-dnu:                             $table-accent-bg;
 $table-striped-color-temp-dnu:                         $table-striped-color;
 $table-striped-bg-factor-temp-dnu:                     $table-striped-bg-factor;
 $table-striped-bg-temp-dnu:                            $table-striped-bg;
@@ -265,11 +274,16 @@ $pagination-disabled-color-temp-dnu:                   $pagination-disabled-colo
 $pagination-disabled-bg-temp-dnu:                      $pagination-disabled-bg;
 $pagination-disabled-border-color-temp-dnu:            $pagination-disabled-border-color;
 
+// --- Placeholders ---
+$placeholder-opacity-max-temp-dnu:                     $placeholder-opacity-max;
+$placeholder-opacity-min-temp-dnu:                     $placeholder-opacity-min;
+
 // --- Cards ---
 $card-border-color-temp-dnu:                           $card-border-color;
 $card-cap-bg-temp-dnu:                                 $card-cap-bg;
 $card-cap-color-temp-dnu:                              $card-cap-color;
 $card-color-temp-dnu:                                  $card-color;
+$card-box-shadow-temp-dnu:                             $card-box-shadow;
 $card-bg-temp-dnu:                                     $card-bg;
 
 // --- Accordion ---
@@ -397,6 +411,8 @@ $offcanvas-border-color-temp-dnu:                      $offcanvas-border-color;
 $offcanvas-bg-color-temp-dnu:                          $offcanvas-bg-color;
 $offcanvas-color-temp-dnu:                             $offcanvas-color;
 $offcanvas-box-shadow-temp-dnu:                        $offcanvas-box-shadow;
+$offcanvas-backdrop-bg-temp-dnu:                       $offcanvas-backdrop-bg;
+$offcanvas-backdrop-opacity-temp-dnu:                  $offcanvas-backdrop-opacity;
 
 // --- Code ---
 $code-color-temp-dnu:                                  $code-color;
@@ -407,4 +423,4 @@ $pre-color-temp-dnu:                                   $pre-color;
 // !! Don't remove the next 2 lines
 // fusv-enable
 // stylelint-enable
-// Generated: Sat May 29 2021 10:23:39 GMT+1000 (Australian Eastern Standard Time)
+// Generated: Wed Oct 06 2021 11:55:02 GMT+1100 (Australian Eastern Daylight Time)

@@ -40,6 +40,7 @@ $danger-alt:                                      $danger-temp-dnu;
 $light-alt:                                       $light-temp-dnu;
 $dark-alt:                                        $dark-temp-dnu;
 $theme-colors-alt:                                $theme-colors-temp-dnu;
+$theme-colors-rgb-alt:                            $theme-colors-rgb-temp-dnu;
 $min-contrast-ratio-alt:                          $min-contrast-ratio-temp-dnu;
 $color-contrast-dark-alt:                         $color-contrast-dark-temp-dnu;
 $color-contrast-light-alt:                        $color-contrast-light-temp-dnu;
@@ -50,6 +51,13 @@ $gradient-alt:                                    $gradient-temp-dnu;
 // --- Body ---
 $body-bg-alt:                                     $body-bg-temp-dnu;
 $body-color-alt:                                  $body-color-temp-dnu;
+
+// --- Utilities maps ---
+$utilities-colors-alt:                            $utilities-colors-temp-dnu;
+$utilities-text-alt:                              $utilities-text-temp-dnu;
+$utilities-text-colors-alt:                       $utilities-text-colors-temp-dnu;
+$utilities-bg-alt:                                $utilities-bg-temp-dnu;
+$utilities-bg-colors-alt:                         $utilities-bg-colors-temp-dnu;
 
 // --- Links ---
 $link-color-alt:                                  $link-color-temp-dnu;
@@ -70,6 +78,7 @@ $headings-color-alt:                              $headings-color-temp-dnu;
 $text-muted-alt:                                  $text-muted-temp-dnu;
 $blockquote-footer-color-alt:                     $blockquote-footer-color-temp-dnu;
 $hr-color-alt:                                    $hr-color-temp-dnu;
+$hr-bg-color-alt:                                 $hr-bg-color-temp-dnu;
 $hr-opacity-alt:                                  $hr-opacity-temp-dnu;
 $mark-bg-alt:                                     $mark-bg-temp-dnu;
 
@@ -265,11 +274,16 @@ $pagination-disabled-color-alt:                   $pagination-disabled-color-tem
 $pagination-disabled-bg-alt:                      $pagination-disabled-bg-temp-dnu;
 $pagination-disabled-border-color-alt:            $pagination-disabled-border-color-temp-dnu;
 
+// --- Placeholders ---
+$placeholder-opacity-max-alt:                     $placeholder-opacity-max-temp-dnu;
+$placeholder-opacity-min-alt:                     $placeholder-opacity-min-temp-dnu;
+
 // --- Cards ---
 $card-border-color-alt:                           $card-border-color-temp-dnu;
 $card-cap-bg-alt:                                 $card-cap-bg-temp-dnu;
 $card-cap-color-alt:                              $card-cap-color-temp-dnu;
 $card-color-alt:                                  $card-color-temp-dnu;
+$card-box-shadow-alt:                             $card-box-shadow-temp-dnu;
 $card-bg-alt:                                     $card-bg-temp-dnu;
 
 // --- Accordion ---
@@ -397,6 +411,8 @@ $offcanvas-border-color-alt:                      $offcanvas-border-color-temp-d
 $offcanvas-bg-color-alt:                          $offcanvas-bg-color-temp-dnu;
 $offcanvas-color-alt:                             $offcanvas-color-temp-dnu;
 $offcanvas-box-shadow-alt:                        $offcanvas-box-shadow-temp-dnu;
+$offcanvas-backdrop-bg-alt:                       $offcanvas-backdrop-bg-temp-dnu;
+$offcanvas-backdrop-opacity-alt:                  $offcanvas-backdrop-opacity-temp-dnu;
 
 // --- Code ---
 $code-color-alt:                                  $code-color-temp-dnu;
@@ -407,4 +423,4 @@ $pre-color-alt:                                   $pre-color-temp-dnu;
 // !! Don't remove the next 2 lines
 // fusv-enable
 // stylelint-enable
-// Generated: Sat May 29 2021 10:23:39 GMT+1000 (Australian Eastern Standard Time)
+// Generated: Wed Oct 06 2021 11:55:02 GMT+1100 (Australian Eastern Daylight Time)
