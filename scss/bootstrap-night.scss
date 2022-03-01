@@ -15,6 +15,7 @@ $enable-color-func-revert: true;
 // Configuration
 @import "functions";
 @import "dark/functions";
+@import "variables-mods";
 @import "variables";  // defaults are here
 @import "variables-alt";  // dark color set is here
 @import "mixins";
